@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Bootstrap Tutorial Sample Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="registration">
+                    <div class="form-group">
+                        <label for="email">Enter email<span class="msg">*</span></label>
+                        <input type="email" class="form-control" name="email" id="email"
+                            aria-describedby="emailHelpId" placeholder="example@mail.com">
+                        <span class="msg"><wbr></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Enter password<span class="msg">*</span></label>
+                        <input type="password" class="form-control" name="password" id="password"
+                            placeholder="Enter password">
+                        <span class="msg"><wbr></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Repeat password<span class="msg">*</span></label>
+                        <input type="password" class="form-control" name="rep-password" id="rep-password"
+                            placeholder="Repeat password">
+                        <span class="msg"><wbr></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Enter date of birth<span class="msg">*</span></label>
+                        <input type="date" class="form-control" name="birthday" id="birthday"
+                            placeholder="Enter password">
+                        <span class="msg"><wbr></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Select your gender<span class="msg">*</span></label>
+                        <br>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="gender-2" value="male"
+                                checked>
+                            <label class="form-check-label" for="gender-1">Male</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="gender-2" value="female">
+                            <label class="form-check-label" for="gender-2">Female</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            id="reg-close">Close</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header header container-fluid">
+        <div class="overlay">
+            <div class="description">
+                <h1>10 surprisingly effective sales techniques, backed by research</h1>
+                <p>Who couldn’t use an arsenal of effective selling techniques?
+                     If you truly want to improve how you sell, look no further than this research-backed 
+                     collection of the very best B2B sales techniques.</p>
+                <button class="btn btn-outline-secondary btn-lg">Tell Me More!</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="container features">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title"></h3>
+                <img src="images/column-1.jpg" class="img-fluid">
+                <p>1. sell to your buyer’s situation (not their disposition)</p>
+                <p>2. disrupt your prospect’s status quo</p>
+                <p>3. introduce unconsidered needs</p>
+                <p>4. tell customer stories with contrast</p>
+                <p>5. avoid the parity trap in sales conversations</p>
+                <p>6. make your customer the hero</p>
+                <p>7. avoid the hammock during sales presentations</p>
+                <p>8. create price uncertainty during sales negotiations</p>
+                <p>9. appeal to emotions (not just data)</p>
+                <p>10. don’t challenge existing customers</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">What makes these sales techniques “the best?”</h3>
+                <img src="images/column-2.jpg" class="img-fluid">
+                <p>The short answer is that these techniques aren’t based on personal experience,
+                     unexamined folklore, or any so-called “best practices.”
+                    <p></p>
+                    One thing that’s clear from our research with B2B DecisionLabs is that the right answer is often
+                     the most counterintuitive. When you choose to follow best practices, you might be using the most
+                      popular method, but not necessarily the approach that works best.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Contact Us</h3>
+                <div class="form-group"> <input type="text" class="form-control" placeholder="Name" name=""> </div>
+                <div class="form-group"> <input type="email" class="form-control" placeholder="Email Address"
+                        name="email">
+                </div>
+                <div class="form-group"> <textarea class="form-control" rows="4"></textarea> </div> <input type="submit"
+                    class="btn btn-secondary btn-block" value="Send" name="">
+                    <button type="submit" class="btn btn-secondary btn-block" id="register-btn">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                    <p>So-called “best practices” won’t hold up across the range of buying decisions you need to influence in the Customer Deciding Journey. Your buyers’ questions, behaviors, and motivations change from one moment to the next.
+
+                        If you truly want to improve how you sell, you need to master a diverse set of sales techniques like these, sharpened with situational awareness to know when and how to adapt to each situation.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <p>1640 Riverside Drive, Hill Valley, California
+                        <br />info@mywebsite.com
+                        <br />+ 01 234 567 88
+                        <br />+ 01 234 567 89
+                    </p>
+                </div>
+            </div>
+    </footer>
+
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
